@@ -2,15 +2,15 @@ import styled from "styled-components";
 
 
 
-const DivMain = styled.div`
-    width: 100%;
-    height: 615px;
+const DivLogo = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: bisque;
+    flex-direction: column;
+    margin-right: 100px;
+
 
 `
 
 
-export default DivMain
+export default DivLogo

@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from '../../Components/Header/Header'
 import DivMain from './StyledLoginPage/DivMain'
 import DivBox from './StyledLoginPage/DivBox'
 import DivTitle from './StyledLoginPage/DivTitle'
@@ -13,6 +14,7 @@ import "./LoginPage.css"
 const LoginPage = () => {
   return (
     <div>
+        <Header />
         <DivMain>
             <DivBox>
                 <div>
