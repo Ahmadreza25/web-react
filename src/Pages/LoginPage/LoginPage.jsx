@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 import Header from '../../Components/Header/Header'
 import DivMain from './StyledLoginPage/DivMain'
 import DivBox from './StyledLoginPage/DivBox'
@@ -29,9 +30,11 @@ const LoginPage = () => {
                     <Input type="text" />
                 </DivInput>
                 <div>
-                    <Button>
-                        ثبت نام / ورود
-                    </Button>
+                    <Link to='/MessagePage'>
+                        <Button>
+                            ثبت نام / ورود
+                        </Button>
+                    </Link>
                 </div>
             </DivBox>
         </DivMain>
