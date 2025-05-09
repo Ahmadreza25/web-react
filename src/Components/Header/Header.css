@@ -1,0 +1,28 @@
+.logo-shop{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: brown;
+       display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:10px;
+}
+.div-shop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    width: 120px;
+    height: 40px;
+    margin-right: 100px;
+    border: 2px solid #000;
+    outline: none;
+    border-radius: 50px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+
+
+}

@@ -39,7 +39,7 @@ const MessagePage = () => {
                     <P color='rgb(89, 90, 90)'>
                         ارسال مجدد تا ___ ثانیه دیگر
                     </P>
-                    <Link to=''>
+                    <Link to='/MainPage'>
                         <Button>
                             تایید ثبت نام
                         </Button>
