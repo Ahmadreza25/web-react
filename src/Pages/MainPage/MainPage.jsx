@@ -5,10 +5,12 @@ import imgtitle from "../../images/img/img-title.png"
 import iconflash from "../../images/icon/icon-flash.png"
 import logo from "../../images/logo/logo.png"
 import DivMain from './StyledMainPage/DivMain'
+import DivMargin from './StyledMainPage/DivMargin'
 import DivWrapper from './StyledMainPage/DivWrapper'
 import DivButton from './StyledMainPage/DivButton'
 import DivStatus from './StyledMainPage/DivStatus'
 import DivItems from './StyledMainPage/DivItems'
+import DivTitle from './StyledMainPage/DivTitle'
 import Button from './StyledMainPage/Button'
 import Span from './StyledMainPage/Span'
 import Img from './StyledMainPage/Img'
@@ -92,8 +94,8 @@ const MainPage = () => {
                 </DivItems>
             </DivStatus>
             <div className='div-items'>
-                <div className='div-title'>
-                    <div className='div-titles'>
+                <DivTitle>
+                    <DivMargin marginright='60px' margintop='60px'>
                         <h4>Eric's Coffee</h4>
                         <h1>کافه اریک</h1>
                         <h3>کامل ترین تجهیزات کافه ورستوان درایران.</h3>
@@ -109,8 +111,8 @@ const MainPage = () => {
                             <Img width='20px'marginrighet='10px' src={iconflash} alt="" />
                           </DivItems>
                         </Button>
-                    </div>
-                </div>
+                    </DivMargin>
+                </DivTitle>
                 <div className='div-img'>
                     <img src={imgtitle} alt="" />
                 </div>
@@ -125,7 +127,7 @@ const MainPage = () => {
               </div>
             </DivWrapper>
             <div>
-              
+                
             </div>
         </DivMain>
     </div>
