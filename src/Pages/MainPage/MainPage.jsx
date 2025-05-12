@@ -1,54 +1,28 @@
 import React from 'react'
 import Header from "../../Components/Header/Header"
+import DataProduct from '../../Data/DataProduct'
+import DataMarquee from '../../Data/DataMarquee'
 import insta from "../../images/logo/logo-insta.png"
 import imgtitle from "../../images/img/img-title.png"
 import iconflash from "../../images/icon/icon-flash.png"
-import logo from "../../images/logo/logo.png"
+import iconcoffee from "../../images/icon/icon-coffee.png"
 import DivMain from './StyledMainPage/DivMain'
+import DivBox from './StyledMainPage/DivBox'
 import DivMargin from './StyledMainPage/DivMargin'
 import DivWrapper from './StyledMainPage/DivWrapper'
 import DivButton from './StyledMainPage/DivButton'
 import DivStatus from './StyledMainPage/DivStatus'
 import DivItems from './StyledMainPage/DivItems'
 import DivTitle from './StyledMainPage/DivTitle'
+import DivimgProduct from './StyledMainPage/DivimgProduct'
+import DivDisplay from './StyledMainPage/DivDisplay'
 import Button from './StyledMainPage/Button'
 import Span from './StyledMainPage/Span'
 import Img from './StyledMainPage/Img'
 import P from './StyledMainPage/P'
+import H2 from './StyledMainPage/H2'
+import H4 from './StyledMainPage/H4'
 import './MainPage.css'
-
-const item = [
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-  {name:'کافه اریک' , img:logo,},
-]
 
 const MainPage = () => {
   return (
@@ -120,15 +94,47 @@ const MainPage = () => {
             <DivWrapper>
               <div className="marquee">
                 {
-                  item.map((item) => (
+                  DataMarquee.map((item) => (
                     <Span>{item.name}<Img src={item.img} width='50px'/></Span>
                   ))
                 }
               </div>
             </DivWrapper>
-            <div>
-                
-            </div>
+            <DivBox width='100%' height='400px'>
+                <div>
+                  <DivMargin marginright='50px' margintop='50px'>
+                      <DivItems>
+                            <div>
+                              <Img src={iconcoffee} width='40px' />
+                            </div>
+                            <DivMargin marginright='20px'>
+                                <H2>دسته بندی محصولات</H2>
+                                <H4 margintop='-20px' font='12px'>از میان بهترین ها بهترین هارا برای شما فراهم کردیم.</H4>
+                            </DivMargin>
+                      </DivItems>
+                  </DivMargin>
+                  <DivItems justify='center'>
+                    <DivBox width='90%' height='200px'>
+                      <DivItems justify='center'>
+                        {
+                          DataProduct.map((item) => (
+                            <DivDisplay>
+                                <DivimgProduct> 
+                                    <Img src={item.img} width='40px'/>
+                                </DivimgProduct>
+                                <DivMargin margintop='-20px'>
+                                    <P>
+                                      {item.name}
+                                    </P>
+                                </DivMargin>
+                            </DivDisplay>
+                          ))
+                        }
+                      </DivItems>
+                    </DivBox>
+                  </DivItems>
+                </div>
+            </DivBox>
         </DivMain>
     </div>
   )

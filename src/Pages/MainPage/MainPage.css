@@ -1,7 +1,7 @@
 .div-items{
     width: 1200px;
     height: 350px;
-    background-color: #ffffff;
+    background-color: #fff;
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -30,3 +30,4 @@
         transform: translateX(-100%);
     }
 }
+
