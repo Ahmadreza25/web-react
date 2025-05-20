@@ -1,0 +1,11 @@
+import styled from "styled-components";
+
+
+
+
+const DivMargin = styled.div`
+    margin-top: ${prop => prop.margintop};
+`
+
+
+export default DivMargin

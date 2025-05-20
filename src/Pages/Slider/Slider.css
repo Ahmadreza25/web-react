@@ -1,0 +1,39 @@
+  .product-info h2 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .price {
+    font-size: 1rem;
+    color: #FF5733;
+    font-weight: bold;
+  }
+  
+  .slider-button {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    background-color: #d6c5c2;
+    color:#000;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .prev-button{
+    left: 900px;
+  }
+  .next-button{
+    right: 900px;
+  }
+  .slider-button:hover {
+    background-color: rgba(160, 103, 103, 0.6);
+  }
+  

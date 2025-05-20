@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from "../../Components/Header/Header"
+import Slider from '../Slider/Slider'
 import DataProduct from '../../Data/DataProduct'
 import DataMarquee from '../../Data/DataMarquee'
 import insta from "../../images/logo/logo-insta.png"
@@ -135,6 +136,29 @@ const MainPage = () => {
                   </DivItems>
                 </div>
             </DivBox>
+              <DivBox width='100%' height='600px'>
+                <DivDisplay>
+                    <div className='div-background'>
+                      <DivMargin margintop='50px'>
+                        <H2 color='#fff'>تخفیفات ویژه</H2>
+                      </DivMargin>
+                    </div>
+                    <div className='product'> 
+                        <DivDisplay>
+                            <div className='div-listbtn'>
+                              <H4>دسته بندی ها</H4>
+                              <Button bachground='#fff' className='bth-hover'><P>دانه قهوه</P></Button>
+                              <Button bachground='#fff' className='bth-hover'><P>آسیاب قهوه</P></Button>
+                              <Button bachground='#fff' className='bth-hover'><P>ابزار باریستا</P></Button>
+                              <Button bachground='#fff' className='bth-hover'><P>تجهیزات کافه و رستوران</P></Button>
+                            </div>
+                            <div>
+                                <Slider />
+                            </div>
+                        </DivDisplay>
+                    </div>
+                </DivDisplay>
+              </DivBox>
         </DivMain>
     </div>
   )
