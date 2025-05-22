@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from "../../Components/Header/Header"
+import Footer from '../../Components/Footer/Footer'
 import Slider from '../../Components/Slider/Slider'
 import DataProduct from '../../Data/DataProduct'
 import DataMarquee from '../../Data/DataMarquee'
@@ -269,6 +270,7 @@ const MainPage = () => {
                     </DivDisplay>
                 </div>
         </DivMain>
+        <Footer />
     </div>
   )
 }
