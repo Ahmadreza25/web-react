@@ -6,8 +6,9 @@ const P = styled.p`
     color:${prop => prop.color};
     margin-top:${prop => prop.margintop};
     margin-left:${prop => prop.marginleft};
-    font-size:15px;
-    font-weight: 500;
+    margin-right: ${prop => prop.marginright};
+    font-size:${prop => prop.font};
+    font-weight: 700;
 
 `
 

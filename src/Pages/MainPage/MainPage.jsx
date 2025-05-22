@@ -1,10 +1,13 @@
 import React from 'react'
 import Header from "../../Components/Header/Header"
-import Slider from '../Slider/Slider'
+import Slider from '../../Components/Slider/Slider'
 import DataProduct from '../../Data/DataProduct'
 import DataMarquee from '../../Data/DataMarquee'
+import DataItems from '../../Data/DataItems'
+import DataItem from '../../Data/DataItem'
 import insta from "../../images/logo/logo-insta.png"
 import imgtitle from "../../images/img/img-title.png"
+import imgTime from '../../images/img/img-time.png'
 import iconflash from "../../images/icon/icon-flash.png"
 import iconcoffee from "../../images/icon/icon-coffee.png"
 import DivMain from './StyledMainPage/DivMain'
@@ -24,6 +27,7 @@ import P from './StyledMainPage/P'
 import H2 from './StyledMainPage/H2'
 import H4 from './StyledMainPage/H4'
 import './MainPage.css'
+import DivItem from './StyledMainPage/DivItem'
 
 const MainPage = () => {
   return (
@@ -159,6 +163,111 @@ const MainPage = () => {
                     </div>
                 </DivDisplay>
               </DivBox>
+              <DivMargin margintop='50px'>
+                <DivBox width='100%' height='300px'justify='space-between'>
+                    {DataItems.map((item) => (
+                      <Button width='300px' margin='10px' bachground='#fff'>
+                          <Img src={item.img} width='300px'/>
+                      </Button>
+                    ))
+                    }
+                </DivBox>
+              </DivMargin>
+              <DivItem>
+                  <DivMargin marginright='-800px'>
+                      <DivItems justify='right'>
+                            <div>
+                              <Img src={iconcoffee} width='40px' />
+                            </div>
+                            <DivMargin marginright='20px'>
+                                <H2>دسته بندی محصولات</H2>
+                                <P color='#0f0f0f' margintop='-10px'>پرفروش ترین محصولات اریک کافه </P>
+                            </DivMargin>
+                      </DivItems>
+                  </DivMargin>
+                    <DivBox width='100%' height='100px'>
+                      <DivItems justify='space-around'>
+                        <Button width='150px' height='55px' border='20px'><P>جدیدترین محصولات</P></Button>
+                        <Button width='150px' height='55px' border='20px'><P>اسپرسوسازصنعتی</P></Button>
+                        <Button width='120px' height='55px' border='20px'><P>آسیاب قهوه</P></Button>
+                        <Button width='120px' height='55px' border='20px'><P>قهوه ساز خانگی</P></Button>
+                        <Button width='120px' height='55px' border='20px'><P>ابزار باریستا</P></Button>
+                        <Button width='120px' height='55px' border='20px'><P>لوازم کافی شاپ</P></Button>
+                        <Button width='120px' height='55px' border='20px'><P>دم آوری قهوه</P></Button>
+                      </DivItems>
+                    </DivBox>
+                    <DivBox width='100%' height='400px'>
+                      <DivItems justify='space-around'>
+                        {DataItem.map((item) => (
+                          <div className='box'>
+                              <DivItems justify='center'>
+                                <Img src={item.img} width='250px' height='200px'/>
+                              </DivItems>
+                                <P marginright='10px' font='14px'>{item.name}</P>
+                                <P
+                                  marginright='10px'
+                                  margintop='-10px' 
+                                  font='12px' 
+                                  color='#a4a4a4'
+                                  >
+                                  {item.title}
+                                </P>
+                                <DivItems justify='left'>
+                                    <P marginleft='10px' color='rgb(171, 96, 43)' margintop='40px'>{item.price}</P>
+                                </DivItems>
+                          </div>
+                        ))
+                        }
+                      </DivItems>
+                    </DivBox>
+                    <Button width='190px' height='60px' bachground='rgb(171, 96, 43)' border='50px'>
+                      <DivItems>
+                        <P color='#fff' font='18px' marginright='20px'>مشاهده بیشتر</P>
+                        <Img src={iconflash} width='30px' marginrighet='30px'/>
+                      </DivItems>
+                    </Button>
+              </DivItem>
+                <div className='div-time'> 
+                    <Img src={imgTime} width='400px'/>
+                    <DivDisplay>
+                          <H2>فروش ویژه اسپرسو ساز Wega Pegaso</H2>
+                          <DivItems justify='center'>
+                             <div className='div-box-time'>
+                                <DivDisplay>
+                                    <P>00</P>
+                                    <P margintop='-10px' color='#a0a0a0'>ثانیه ها</P>
+                                </DivDisplay>
+                             </div>
+                             <div className='div-box-time'>
+                                <DivDisplay>
+                                    <P>00</P>
+                                    <P margintop='-10px' color='#a0a0a0'>دقیقه</P>
+                                </DivDisplay>
+                             </div>
+                             <div className='div-box-time'>
+                                <DivDisplay>
+                                    <P>00</P>
+                                    <P margintop='-10px' color='#a0a0a0'>ساعت</P>
+                                </DivDisplay>
+                             </div>
+                             <div className='div-box-time'>
+                                <DivDisplay>
+                                    <P>00</P>
+                                    <P margintop='-10px' color='#a0a0a0'>روز</P>
+                                </DivDisplay>
+                             </div>
+                          </DivItems>
+                          <H2 color='rgb(171, 96, 43)'>
+                          205,000,000تومان
+                          </H2>
+                          <Button bachground='rgb(171, 96, 43)' width='100px' border='20px'>
+                              <DivItems>
+                                <P marginright='20px' color='#fff' font='18px'>خرید</P>
+                                <Img src={iconflash} width='20px' marginrighet='10px' />
+                              </DivItems>
+                          </Button>
+                    </DivDisplay>
+                </div>
         </DivMain>
     </div>
   )

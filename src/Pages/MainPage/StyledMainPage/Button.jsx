@@ -12,6 +12,7 @@ const Button = styled.button`
     font-size: 14px;
     font-weight: 700;
     margin-right: ${prop => prop.marginright};
+    margin:${prop => prop.margin};
 `
 
 export default Button

@@ -68,3 +68,29 @@
     border-bottom: 2px solid rgb(171, 96, 43);
     height: 60px;
 }
+
+.box{
+    width: 280px;
+    height: 350px;
+    border: 1px solid #a4a4a4;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.div-time{
+    width: 80%;
+    height: 450px;
+    background-color: rgb(249, 235, 225);
+    margin-top: 100px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.div-box-time{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 10px;
+}
