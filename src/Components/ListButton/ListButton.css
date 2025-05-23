@@ -1,0 +1,80 @@
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    width: 1000px;
+    height: 380px;
+    margin-top: 10px;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dropdown-button {
+    padding: 8px 12px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: right;
+  }
+  
+  .dropdown-button:hover {
+    background-color: #f0f0f0;
+  }
+  .div-button{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 100%;
+    border-left: 1px solid #ffd9bd;
+    padding-left: 60px;
+  }
+  .div-button button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 55px;
+    width: 180px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    transition:background-color 1s ;
+    border-radius: 5px;
+    color: rgb(93, 91, 88);
+    font-size: 15px;
+  }
+  .div-button button:hover{
+    background-color: #dfdeda;
+  }
+  .div-button img{
+    width: 30px;
+  }
+
+  .list-btns{
+    width: 180px;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .list-btns button{
+    background-color: #fff;
+    height:30px;
+    font-size: 15px;
+    margin-top: 7px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    color: #7f7f7f;
+  }
+  .list-btns h4{
+    color: #575757;
+  }

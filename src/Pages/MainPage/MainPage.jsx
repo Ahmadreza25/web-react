@@ -1,6 +1,7 @@
-import React from 'react'
+import React , {useState} from 'react'
 import Header from "../../Components/Header/Header"
 import Footer from '../../Components/Footer/Footer'
+import ListButton from '../../Components/ListButton/ListButton'
 import Slider from '../../Components/Slider/Slider'
 import DataProduct from '../../Data/DataProduct'
 import DataMarquee from '../../Data/DataMarquee'
@@ -29,29 +30,36 @@ import H2 from './StyledMainPage/H2'
 import H4 from './StyledMainPage/H4'
 import './MainPage.css'
 import DivItem from './StyledMainPage/DivItem'
+import { Link } from 'react-router'
 
 const MainPage = () => {
+  const [shoeMenu , setShoeMenu] = useState(false)
+
   return (
     <div>
         <Header />
         <DivMain>
             <DivStatus>
                 <DivButton>
-                  <Button color='#fff' bachground='#000' marginright='20px'>  
-                      <P>
-                        صفحه اصلی
-                      </P>
-                  </Button>
-                  <Button color='#fff' bachground='#000' marginright='20px'>
-                      <P>
-                        لیست محصولات  
-                      </P>  
-                  </Button>
-                  <Button color='#fff' bachground='#000' marginright='20px'>
-                      <P>
-                          خدمات
-                      </P>
-                  </Button>
+                  <Link to='/MainPage'>
+                    <Button color='#fff' bachground='#000' marginright='20px'>  
+                        <P>
+                          صفحه اصلی
+                        </P>
+                    </Button>
+                  </Link>
+                  <div
+                  onMouseEnter={() => setShoeMenu(true)}
+                  onMouseLeave={() => setShoeMenu(false)}
+                  className="menu-container"
+                  >
+                    <Button color='#fff' bachground='#000' marginright='20px'>
+                        <P>
+                          لیست محصولات  
+                        </P>  
+                    </Button>
+                    {shoeMenu && <ListButton />}
+                  </div>
                   <Button color='#fff' bachground='#000' marginright='20px'>
                       <P>
                           اموزش ها
@@ -72,7 +80,7 @@ const MainPage = () => {
                   <P color='#fff' marginleft='10px'>Ahmadrezaa.83</P>
                   <Img width='30px' src={insta} alt="logo" />
                 </DivItems>
-            </DivStatus>
+          </DivStatus>
             <div className='div-items'>
                 <DivTitle>
                     <DivMargin marginright='60px' margintop='60px'>
