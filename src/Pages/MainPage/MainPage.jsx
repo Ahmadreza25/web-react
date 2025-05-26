@@ -1,13 +1,12 @@
-import React , {useState} from 'react'
+import React from 'react'
 import Header from "../../Components/Header/Header"
 import Footer from '../../Components/Footer/Footer'
-import ListButton from '../../Components/ListButton/ListButton'
+import Status from '../../Components/Status/Status'
 import Slider from '../../Components/Slider/Slider'
 import DataProduct from '../../Data/DataProduct'
 import DataMarquee from '../../Data/DataMarquee'
 import DataItems from '../../Data/DataItems'
 import DataItem from '../../Data/DataItem'
-import insta from "../../images/logo/logo-insta.png"
 import imgtitle from "../../images/img/img-title.png"
 import imgTime from '../../images/img/img-time.png'
 import iconflash from "../../images/icon/icon-flash.png"
@@ -16,8 +15,6 @@ import DivMain from './StyledMainPage/DivMain'
 import DivBox from './StyledMainPage/DivBox'
 import DivMargin from './StyledMainPage/DivMargin'
 import DivWrapper from './StyledMainPage/DivWrapper'
-import DivButton from './StyledMainPage/DivButton'
-import DivStatus from './StyledMainPage/DivStatus'
 import DivItems from './StyledMainPage/DivItems'
 import DivTitle from './StyledMainPage/DivTitle'
 import DivimgProduct from './StyledMainPage/DivimgProduct'
@@ -30,57 +27,15 @@ import H2 from './StyledMainPage/H2'
 import H4 from './StyledMainPage/H4'
 import './MainPage.css'
 import DivItem from './StyledMainPage/DivItem'
-import { Link } from 'react-router'
 
 const MainPage = () => {
-  const [shoeMenu , setShoeMenu] = useState(false)
-
   return (
     <div>
         <Header />
         <DivMain>
-            <DivStatus>
-                <DivButton>
-                  <Link to='/MainPage'>
-                    <Button color='#fff' bachground='#000' marginright='20px'>  
-                        <P>
-                          صفحه اصلی
-                        </P>
-                    </Button>
-                  </Link>
-                  <div
-                  onMouseEnter={() => setShoeMenu(true)}
-                  onMouseLeave={() => setShoeMenu(false)}
-                  className="menu-container"
-                  >
-                    <Button color='#fff' bachground='#000' marginright='20px'>
-                        <P>
-                          لیست محصولات  
-                        </P>  
-                    </Button>
-                    {shoeMenu && <ListButton />}
-                  </div>
-                  <Button color='#fff' bachground='#000' marginright='20px'>
-                      <P>
-                          اموزش ها
-                      </P>
-                  </Button>
-                  <Button color='#fff' bachground='#000' marginright='20px'>
-                      <P>
-                          درباره ما
-                      </P>
-                  </Button>
-                  <Button color='#fff' bachground='#000' marginright='20px'>
-                      <P>
-                         تماس با ما
-                      </P>
-                  </Button>
-                </DivButton>
-                <DivItems marginleft='30px'>
-                  <P color='#fff' marginleft='10px'>Ahmadrezaa.83</P>
-                  <Img width='30px' src={insta} alt="logo" />
-                </DivItems>
-          </DivStatus>
+          <div>
+            <Status />
+          </div>
             <div className='div-items'>
                 <DivTitle>
                     <DivMargin marginright='60px' margintop='60px'>
