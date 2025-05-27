@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../../Components/Header/Header'
 import Footer from '../../Components/Footer/Footer'
 import Status from '../../Components/Status/Status'
+import BarEducation from '../../Components/BarEducation/BarEducation'
 import imgLogo from '../../images/img-Education/img-logo.png'
 import hour from '../../images/img-Education/hour.png'
 import DataEducation from '../../Data/DataEducation'
@@ -48,9 +49,8 @@ const Education = () => {
                     ))
                     }
                 </div>
-
                 <div>
-
+                    <BarEducation />
                 </div>
             </div>
         </div>
