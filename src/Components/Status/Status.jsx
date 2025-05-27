@@ -35,11 +35,13 @@ const Status = () => {
                     </Button>
                     {shoeMenu && <ListButton />}
                   </div>
-                  <Button color='#fff' bachground='#000' marginright='20px'>
-                      <P>
-                          اموزش ها
-                      </P>
-                  </Button>
+                  <Link to='/Education'>
+                    <Button color='#fff' bachground='#000' marginright='20px'>
+                        <P>
+                            اموزش ها
+                        </P>
+                    </Button>
+                  </Link>
                   <Button color='#fff' bachground='#000' marginright='20px'>
                       <P>
                           درباره ما

@@ -22,12 +22,14 @@ const Header = () => {
   let backgroundColor ;
 
   const hidelogo = path === '/' || path === '/MessagePage'
-
+  const pageEducation = path === '/Education'
   if(path === '/'){
     backgroundColor = 'bisque'
   } else if(path === '/MessagePage'){
     backgroundColor = "bisque"
   }else if(path === '/MainPage'){
+    backgroundColor = '#fff'
+  }else if (path === '/Education'){
     backgroundColor = '#fff'
   }
 
