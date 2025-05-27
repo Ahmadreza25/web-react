@@ -4,75 +4,84 @@ import img2 from '../../images/img-Education/img-2.png'
 import img3 from '../../images/img-Education/img-3.png'
 import img4 from '../../images/img-Education/img-4.png'
 import hour from '../../images/img-Education/hour.png'
+import Img from './StyledBarEducation/Img'
+import DivMain from './StyledBarEducation/DivMain'
+import DivItems from './StyledBarEducation/DivItems'
+import DivImg from './StyledBarEducation/DivImg'
+import DivTitle from './StyledBarEducation/DivTitle'
+import Div from './StyledBarEducation/Div'
+import DivItem from './StyledBarEducation/DivItem'
+import DivTitles from './StyledBarEducation/DivTitles'
+import P from './StyledBarEducation/P'
 import './BarEducation.css'
 const BarEducation = () => {
   return (
     <div>
-        <div className='main'>
-            <div className='div___title'>
+        <DivMain>
+            <DivTitle>
                 <p>
                     تازه های خبری
                 </p>
-            </div>
+            </DivTitle>
             <div>
-                <div className='div___items'>
-                    <div className='div___img'>
-                        <img src={img1} alt="" />
-                    </div>
-                    <div className='div___titles'>
-                        <div className='items-title'>
+                <DivItems>
+                    <DivImg>
+                        <Img width='100%' height='100%' borderr='50%' src={img1} alt="" />
+                    </DivImg>
+                    <Div width='280px' marginright='20px'>
+                        <DivTitles>
                             <p>انواع قهوه</p>
-                        </div>
-                        <div className='div___time'>
-                            <img src={hour}/>
-                            <p>شنبه 1 دی 1403</p>
-                        </div>
-                    </div>
-                </div>
-                <div  className='div___items'>
-                    <div className='div___img'>
-                        <img src={img2} alt="" />
-                    </div>
-                    <div className='div___titles'>
-                    <div className='items-title'>
+                        </DivTitles>
+                        <DivItem>
+                            <Img width='16px' src={hour}/>
+                            <P>شنبه 1 دی 1403</P>
+                        </DivItem>
+                    </Div>
+                </DivItems>
+                <DivItems>
+                    <DivImg>
+                        <Img width='100%' height='100%' borderr='50%'  src={img2} alt="" />
+                    </DivImg>
+                    <Div width='280px' marginright='20px'>
+                    <DivTitles>
                         <p>انواع قهوه ساز و آموزش استفاده از آنها</p>
-                    </div>
-                        <div className='div___time'>
-                            <img src={hour}/>
-                            <p>شنبه 1 دی 1403</p>
-                        </div>
-                    </div>
-                </div>
-                <div  className='div___items'>
-                    <div className='div___img'>
-                        <img src={img3} alt="" />
-                    </div>
-                    <div className='div___titles'>
-                    <div className='items-title'>
+                    </DivTitles>
+                        <DivItem>
+                            <Img width='16px' src={hour}/>
+                            <P>شنبه 1 دی 1403</P>
+                        </DivItem>
+                    </Div>
+                </DivItems>
+                <DivItems>
+                    <DivImg>
+                        <Img width='100%' height='100%' borderr='50%'  src={img3} alt="" />
+                    </DivImg>
+                    <Div width='280px' marginright='20px'>
+                    <DivTitles>
                         <p>لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی مینویسند!</p>
-                    </div>
-                        <div className='div___time'>
-                            <img src={hour}/>
-                            <p>شنبه 1 دی 1403</p>
-                        </div>
-                    </div>
-                </div>
-                <div className='div___items'>
-                    <div className='div___img'>
-                        <img src={img4} alt="" />
-                    </div>
-                    <div className='div___titles'>
-                    <div className='items-title'>
+                    </DivTitles>
+                        <DivItem>
+                            <Img width='16px' src={hour}/>
+                            <P>شنبه 1 دی 1403</P>
+                        </DivItem>
+                    </Div>
+                </DivItems>
+                <DivItems>
+                    <DivImg>
+                        <Img width='100%' height='100%' borderr='50%'  src={img4} alt="" />
+                    </DivImg>
+                    <Div width='280px' marginright='20px'>
+                    <DivTitles>
                         <p>لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی مینویسند!</p>
-                    </div>
-                        <div className='div___time'>
-                            <img src={hour}/>
-                            <p>شنبه 1 دی 1403</p>
-                        </div>
-                    </div>
-                </div>
+                    </DivTitles>
+                        <DivItem>
+                            <Img width='16px' src={hour}/>
+                            <P>شنبه 1 دی 1403</P>
+                        </DivItem>
+                    </Div>
+                </DivItems>
             </div>
-        </div>
+        </DivMain>
     </div>
   )
 }
