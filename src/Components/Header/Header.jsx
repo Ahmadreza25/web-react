@@ -23,6 +23,8 @@ const Header = () => {
 
   const hidelogo = path === '/' || path === '/MessagePage'
   const pageEducation = path === '/Education'
+  const pageAboutUs = path === '/AboutUsPage'
+
   if(path === '/'){
     backgroundColor = 'bisque'
   } else if(path === '/MessagePage'){
@@ -30,6 +32,8 @@ const Header = () => {
   }else if(path === '/MainPage'){
     backgroundColor = '#fff'
   }else if (path === '/Education'){
+    backgroundColor = '#fff'
+  }else if (path === '/AboutUsPage'){
     backgroundColor = '#fff'
   }
 

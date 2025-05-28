@@ -42,11 +42,13 @@ const Status = () => {
                         </P>
                     </Button>
                   </Link>
-                  <Button color='#fff' bachground='#000' marginright='20px'>
-                      <P>
-                          درباره ما
-                      </P>
-                  </Button>
+                  <Link to='/AboutUsPage'>
+                    <Button color='#fff' bachground='#000' marginright='20px'>
+                        <P>
+                            درباره ما
+                        </P>
+                    </Button>
+                  </Link>
                   <Button color='#fff' bachground='#000' marginright='20px'>
                       <P>
                          تماس با ما
