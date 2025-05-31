@@ -49,11 +49,13 @@ const Status = () => {
                         </P>
                     </Button>
                   </Link>
-                  <Button color='#fff' bachground='#000' marginright='20px'>
-                      <P>
-                         تماس با ما
-                      </P>
-                  </Button>
+                  <Link to='/ContactUsPage'>
+                    <Button color='#fff' bachground='#000' marginright='20px'>
+                        <P>
+                          تماس با ما
+                        </P>
+                    </Button>
+                  </Link>
                 </DivButton>
                 <DivItems marginleft='30px'>
                   <P color='#fff' marginleft='10px'>Ahmadrezaa.83</P>

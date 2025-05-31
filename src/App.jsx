@@ -5,6 +5,7 @@ import MessagePage from './Pages/MessagePage/MessagePage'
 import MainPage from './Pages/MainPage/MainPage'
 import Education from './Pages/Education/Education'
 import AboutUsPage from './Pages/AboutUsPage/AboutUsPage'
+import ContactUsPage from './Pages/ContactUsPage/ContactUsPage'
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
                 <Route path='/MainPage' element={<MainPage />}/>
                 <Route path='/Education' element={<Education />}/>
                 <Route path='/AboutUsPage' element={<AboutUsPage />}/>
+                <Route path='/ContactUsPage' element={<ContactUsPage />}/>
             </Routes>
         </Router>
     </div>
